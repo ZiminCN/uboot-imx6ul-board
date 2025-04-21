@@ -1,0 +1,6 @@
+ZIMIN_BOARD BOARD
+M:	Zi Min <zimin@18171190533@163.com>
+S:	Maintained
+F:	board/freescale/zimin_board/
+F:	include/configs/zimin_board.h
+F:	configs/zimin_board_defconfig

@@ -1,0 +1,15 @@
+if TARGET_ZIMIN_BOARD
+
+config SYS_BOARD
+	default "zimin_board"
+
+config SYS_VENDOR
+	default "freescale"
+
+config SYS_CONFIG_NAME
+	default "zimin_board"
+
+config SYS_TEXT_BASE
+	default 0x87800000
+
+endif
