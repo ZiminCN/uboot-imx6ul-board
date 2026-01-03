@@ -555,7 +555,7 @@ config TARGET_MX6UL_14X14_EVK
 	select ARCH_MISC_INIT
 
 config TARGET_ZIMIN_BOARD
-	bool "zimin_board"
+	bool "imx6ul_zimin_board"
 	depends on MX6UL
 	select BOARD_LATE_INIT
 	select DM
@@ -846,7 +846,7 @@ config TARGET_O4_IMX6ULL_NANO
 	  based on Freescale's i.MX6UL/i.MX6ULL SoC.
 
 config TARGET_ZIMIN_BOARD
-	bool "zimin_board"
+	bool "imx6ul_zimin_board"
 	depends on MX6UL
 	select BOARD_LATE_INIT
 	select DM
@@ -916,6 +916,6 @@ source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
 source "board/BuR/brppt2/Kconfig"
 source "board/out4/o4-imx6ull-nano/Kconfig"
-source "board/freescale/zimin_board/Kconfig"
+source "board/freescale/mx6ul_zimin_board/Kconfig"
 
 endif

@@ -432,7 +432,7 @@ int checkboard(void)
 	if (is_mx6ul_9x9_evk())
 		puts("Board: MX6UL 9x9 EVK\n");
 	else
-		puts("Board: MX6UL 14x14 EVK\n");
+		puts("Board: MX6UL 14x14 EVK Zimin Board\n");
 
 	return 0;
 }

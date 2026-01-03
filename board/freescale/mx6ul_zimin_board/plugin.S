@@ -8,7 +8,7 @@
 #include <config.h>
 
 /* DDR script */
-.macro zimin_board_ddr3_evk_setting
+.macro mx6ul_zimin_board_ddr3_evk_setting
 	ldr r0, =IOMUXC_BASE_ADDR
 	ldr r1, =0x000C0000
 	str r1, [r0, #0x4B4]
@@ -116,7 +116,7 @@
 	str r1, [r0, #0x01C]
 .endm
 
-.macro zimin_board_ddr3_eol_evk_setting
+.macro mx6ul_zimin_board_ddr3_eol_evk_setting
 	ldr r0, =IOMUXC_BASE_ADDR
 	ldr r1, =0x000C0000
 	str r1, [r0, #0x4B4]
@@ -222,7 +222,7 @@
 	str r1, [r0, #0x01C]
 .endm
 
-.macro zimin_board_lpddr2_evk_setting
+.macro mx6ul_zimin_board_lpddr2_evk_setting
 	ldr r0, =IOMUXC_BASE_ADDR
 	ldr r1, =0x00080000
 	str r1, [r0, #0x4B4]
@@ -361,11 +361,11 @@
 
 .macro imx6_ddr_setting
 #if defined (CONFIG_TARGET_MX6UL_9X9_EVK)
-	zimin_board_lpddr2_evk_setting
+	mx6ul_zimin_board_lpddr2_evk_setting
 #elif defined(CONFIG_DDR3L_MT41K256M16HA)
-	zimin_board_ddr3_eol_evk_setting
+	mx6ul_zimin_board_ddr3_eol_evk_setting
 #else
-	zimin_board_ddr3_evk_setting
+	mx6ul_zimin_board_ddr3_evk_setting
 #endif
 .endm
 

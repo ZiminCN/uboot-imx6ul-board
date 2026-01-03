@@ -10,7 +10,7 @@
 
 #include <dt-bindings/input/input.h>
 #include "imx6ul.dtsi"
-#include "imx6ul-14x14-evk.dtsi"
+#include "imx6ul-zimin-board-evk.dtsi"
 
 / {
 	model = "Freescale i.MX6 UltraLite Zimin Board";

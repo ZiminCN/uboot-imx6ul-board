@@ -11,16 +11,17 @@ CONFIG_TARGET_ZIMIN_BOARD=y
 CONFIG_SYS_I2C_MXC_I2C1=y
 CONFIG_SYS_I2C_MXC_I2C2=y
 CONFIG_DM_GPIO=y
-CONFIG_DEFAULT_DEVICE_TREE="zimin-board-sd"
+# CONFIG_DEFAULT_DEVICE_TREE="imx6ul-14x14-evk"
+CONFIG_DEFAULT_DEVICE_TREE="imx6ul-zimin-board-sd"
 CONFIG_SUPPORT_RAW_INITRD=y
 CONFIG_USE_BOOTCOMMAND=y
 CONFIG_BOOTCOMMAND="run findfdt;mmc dev ${mmcdev};mmc dev ${mmcdev}; if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi"
-CONFIG_IMX_CONFIG="board/freescale/zimin_board/imximage.cfg"
+CONFIG_IMX_CONFIG="board/freescale/mx6ul_zimin_board/imximage.cfg"
 
 # this is declare kernel dts file name 
-CONFIG_DEFAULT_FDT_FILE="imx6ul-14x14-evk.dtb"
+CONFIG_DEFAULT_FDT_FILE="imx6ul-zimin-board-sd.dtb"
 
-CONFIG_BOOTDELAY=5
+CONFIG_BOOTDELAY=1
 # CONFIG_CONSOLE_MUX is not set
 CONFIG_SYS_CONSOLE_IS_IN_ENV=y
 CONFIG_BOARD_EARLY_INIT_F=y
@@ -112,3 +113,4 @@ CONFIG_USE_IMXIMG_PLUGIN=y
 # CONFIG_CMD_BMODE=y
 
 CONFIG_OF_LIBFDT=y
+CONFIG_NET_RANDOM_ETHADDR=y

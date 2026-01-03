@@ -6,7 +6,7 @@
  * published by the Free Software Foundation.
  */
 
-#include "zimin-board-emmc.dts"
+#include "imx6ul-zimin-board-emmc.dts"
 
 
 &gpmi {
